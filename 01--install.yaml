@@ -38,11 +38,11 @@
 - hosts: lb_nodes
   become: yes
   vars:
-    DOMAIN_NAME: vouchershop555666.jkan.pl
-    DOMAIN_OWNER_EMAIL: matejkojulia@gmail.com
+    DOMAIN_NAME: juma.edu-cloud.uek.krakow.pl
+    DOMAIN_OWNER_EMAIL: s211707@student.uek.krakow.pl
     APP_NODE_IPS: 
-      - '3.124.242.246:5000'
-      - '18.193.121.157:5000'
+      - '172.31.46.239'
+      - '172.31.47.237'
     EPEL_RPM_URL: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
     CERT_BOT_RPM: https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/c/certbot-1.10.1-1.el7.noarch.rpm
   tasks:
